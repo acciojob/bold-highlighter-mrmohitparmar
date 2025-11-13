@@ -1,9 +1,9 @@
 function highlight() {
     //Write your code here
 	let str = document.querySelectorAll("strong")
-  for (let i = 0; i < str.length; i++) {
-    str[i].style.color = "green";
-  }
+  str.forEach(tag =>{(
+	  tag.style.color="green";
+  )}
 
 }
 
@@ -12,9 +12,9 @@ function return_normal() {
     //Write your code here
 
 	let str = document.querySelectorAll("strong")
-  for (let i = 0; i < str.length; i++) {
-    str[i].style.color = "black";
-  }
+  str.forEach(tag =>{(
+	  tag.style.color="black";
+  )}
     
 }
 
