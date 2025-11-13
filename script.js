@@ -1,23 +1,24 @@
 function highlight() {
-    //Write your code here
-	let str = document.querySelectorAll("strong")
-  str.forEach(tag =>{(
-	  tag.style.color="green";
-  )}
+  // Select all <strong> tags
+  let str = document.querySelectorAll("strong");
 
+  // Change color to green
+  str.forEach(tag => {
+    tag.style.color = "green";
+  });
 }
-
 
 function return_normal() {
-    //Write your code here
+  // Select all <strong> tags
+  let str = document.querySelectorAll("strong");
 
-	let str = document.querySelectorAll("strong")
-  str.forEach(tag =>{(
-	  tag.style.color="black";
-  )}
-    
+  // Change color back to black
+  str.forEach(tag => {
+    tag.style.color = "black";
+  });
 }
 
-	let para = document.querySelectorAll(".para");
-para.addEvenetListerner("mouseenter",highlight);
-para.addEventListerner("mouseleave", return_normal);
+// Event listeners on paragraph
+let para = document.querySelector(".para"); // sirf ek element h
+para.addEventListener("mouseenter", highlight);
+para.addEventListener("mouseleave", return_normal);
